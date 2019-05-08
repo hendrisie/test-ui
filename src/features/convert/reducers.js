@@ -2,9 +2,9 @@
 @startuml
 
 class convert.reducers << (R,green) Reducer>>{
-    +denomination: PageParams
-    +result: Array<Device>,
-    +leftover: Device,
+    +denomination: Array<number>
+    +result: Array<denomination>,
+    +leftover: number,
 }
 
 @enduml

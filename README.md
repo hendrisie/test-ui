@@ -12,9 +12,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <!-- toc -->
 - [Prerequisite](#prerequisite)
-- [How to Run](#howtorun)
-- [Cloud Hosting](#cloudhosting)
-- [Design Specifications](#design)
+- [How to Run](#how-to-run)
+- [Cloud Hosting](#cloud-hosting)
+- [Design Specifications](#design-specifications)
 
 <!-- tocstop -->
 
@@ -76,7 +76,7 @@ http://hsie-test-ui.s3-website-ap-southeast-1.amazonaws.com/
 - Redux-Form for managing form inputs (https://redux-form.com)
 - Material UI for UI elements (https://material-ui.com/)
 - Jest and Enzyme for testing (https://jestjs.io/ and https://airbnb.io/enzyme/)
-- Docker for standardize build and deployment process (https://www.docker.com/)
+- Docker to standardize build and deployment process (https://www.docker.com/)
 - Git for code versioning and GitHub for code repository (https://github.com/)
 - Travis CI as CI/CD tool (https://travis-ci.com/)
 - Amazon S3 for cloud based static web hosting (https://aws.amazon.com/s3/)
@@ -120,10 +120,10 @@ Folder hierarchy is inspired by the `ducks` pattern (https://github.com/erikras/
 
 #### Class Diagram:
 
-Below are the high level class diagram of the component tree
+Below is the high level class diagram of the React component tree and Redux Store in the application
 <img src="https://raw.githubusercontent.com/hendrisie/test-ui/master/docs/images/class-diagram.png">
 
 #### Sequence Diagram:
 
-Below are the high level flow of the application
+Below are the high level sequence diagram for the flow of events inside the application  
 <img src="https://raw.githubusercontent.com/hendrisie/test-ui/master/docs/images/sequence-diagram.png">

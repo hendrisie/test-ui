@@ -2,6 +2,8 @@
 @startuml
 
 class Result << (C,red) Component>>{
+  result: Array<denomination>,
+  leftover: number,
 }
 
 @enduml
