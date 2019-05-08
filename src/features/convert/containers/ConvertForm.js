@@ -1,3 +1,16 @@
+/*
+@startuml
+
+!include ../components/ConvertForm.jsx
+
+ConvertFormHOC o-- ConvertForm
+
+class ConvertFormHOC << (C,red) Container>>{
+}
+
+@enduml
+
+ */
 import { reduxForm } from 'redux-form';
 import component from '../components/ConvertForm';
 import { submitTotal } from '../actions';

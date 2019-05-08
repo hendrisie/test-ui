@@ -1,3 +1,16 @@
+/*
+@startuml
+
+!include ../components/Result.jsx
+
+ResultHOC o-- Result
+
+class ResultHOC << (C,red) Container>>{
+}
+
+@enduml
+
+ */
 import selectors from '../selectors';
 import { connect } from 'react-redux';
 import component from '../components/Result';

@@ -1,11 +1,21 @@
 /*
 @startuml
 
-!include ../../../modules/Application/reducers.js
-!include ../../../modules/Listing/reducers.js
+!include ../../features/convert/reducers.js
 
-state o-- Application.reducers
-state o-- Listing.reducers
+class formReducers << (R,green) Reducer>>{
+}
+
+class store << (S,green) Store>>{
+    +convert: convert.reducers,
+    +form: formReducers,
+}
+
+store o-- convert.reducers
+store o-- formReducers
+
+
+
 
 @enduml
  */

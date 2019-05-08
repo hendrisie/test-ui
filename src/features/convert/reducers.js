@@ -1,32 +1,15 @@
 /*
 @startuml
 
-Detail.reducers o-- PageParams : pageParams
-
-class Detail.reducers << (R,green) Reducer>>{
-    +pageParams: PageParams
-    +devices: Array<Device>,
-    +currentDevice: Device,
-    +currentBundles: MobilePromotion,
-    +plans: Array<Plan>,
-    +selectedCapacity: string,
-    +selectedColor: string,
-    +selectedPlan: string,
-    +inventories: Array<Inventory>,
+class convert.reducers << (R,green) Reducer>>{
+    +denomination: PageParams
+    +result: Array<Device>,
+    +leftover: Device,
 }
-
-'class PageParams {
-'    deviceType: string,
-'    pageType: string,
-'    type: string,
-'    offerType: string,
-'    planCategory: string,
-'}
 
 @enduml
 
  */
-// @flow
 import { ACTION_SUBMIT } from './constants';
 import { parser } from './formhelper';
 

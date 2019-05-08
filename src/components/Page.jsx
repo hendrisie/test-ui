@@ -1,3 +1,17 @@
+/*
+@startuml
+
+!include ./NavBar.jsx
+
+Page o-- NavBar
+
+class Page << (C,red) Component>>{
+  title: string
+}
+
+@enduml
+
+ */
 import * as React from 'react';
 import './Page.css';
 import NavBar from './NavBar';

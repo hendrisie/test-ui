@@ -1,3 +1,16 @@
+/*
+@startuml
+
+class FormTextField << (C,red) Component>>{
+  label: string
+  input: Input
+  meta: Meta
+  ...rest
+}
+
+@enduml
+
+ */
 import React from 'react';
 import TextField from '@material-ui/core/TextField';
 

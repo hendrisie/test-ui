@@ -1,3 +1,18 @@
+/*
+@startuml
+
+!include ../../../components/FormTextField.jsx
+
+ConvertForm o-- reduxForm.Field
+reduxForm.Field o-- FormTextField
+
+class ConvertForm << (C,red) Component>>{
+  handleSubmit()
+}
+
+@enduml
+
+ */
 import React from 'react';
 import { Field } from 'redux-form';
 import FormTextField from '../../../components/FormTextField';

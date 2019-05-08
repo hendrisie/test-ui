@@ -1,8 +1,31 @@
+<div align="center" markdown="1">
+
+<h1>Simple Denominator App</h1>
+
+Given a number of currency, this application will calculate the minimum number of denominators needed to make that amount when the user hits ‘Enter’
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+</div>
 
-In the project directory, you can run:
+<!-- toc -->
+- [Prerequisite](#prerequisite)
+- [How to run](#howtorun)
+- [Cloud hosting](#cloudhosting)
+- [Design specifications](#design)
+
+<!-- tocstop -->
+
+## Prerequisite
+
+Before running the scripts, please ensure you have done the following:<br>
+- Installed [NodeJS](https://nodejs.org/en/download/)
+- Change the working directory to the project directory (/test-ui)
+- Execute `npm install` to install all the dependencies for the project
+
+## How to run
+
+The following scripts can be run in the project directory via terminal (command line)
 
 ### `npm start`
 
@@ -14,7 +37,7 @@ You will also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
+Launches the test runner.<br>
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
 ### `npm run build`
@@ -37,32 +60,56 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Cloud hosting
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+This app is also hosted in the cloud, the latest code in GitHub will be automatically tested and deployed to Amazon S3 by Travis CI.
+Please check the link below for the latest version deployed:<br>
+http://hsie-test-ui.s3-website-ap-southeast-1.amazonaws.com/
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Design Specifications
 
-### Code Splitting
+This application is using the following:
+- ReactJS library (https://reactjs.org/)
+- Redux for app state management (https://redux.js.org/)
+- Redux-Form for managing form inputs (https://redux-form.com)
+- Material UI for UI elements (https://material-ui.com/)
+- Jest and Enzyme for testing (https://jestjs.io/ and https://airbnb.io/enzyme/)
+- Docker for standardize build and deployment process (https://www.docker.com/)
+- Git for code versioning and GitHub for code repository (https://github.com/)
+- Travis CI as CI/CD tool (https://travis-ci.com/)
+- Amazon S3 for cloud based static web hosting (https://aws.amazon.com/s3/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+Folder structure:<br>
+```
+.
++-- src
+|   +-- components
+|   |   +-- common_component1.jsx
+|   |   +-- common_component2.jsx
+|   +-- features
+|   |   +-- feature1
+|   |   |   +-- components
+|   |   |   |   +-- feature1_component1.jsx
+|   |   |   +-- containers
+|   |   |   |   +-- feature1_container1.jsx
+|   |   |   +-- index.js
+|   |   |   +-- constants.js
+|   |   |   +-- actions.js
+|   |   |   +-- reducers.js
+|   |   |   +-- selectors.js
+|   |   |   +-- (...misc_files)
+|   |   +-- feature2
+|   +-- pages
+|   |   +-- page1
+|   |   |   +-- page1.jsx
+|   |   |   +-- store1.jsx
+|   +-- index.jsx
+|   +-- serviceWorker.js
++-- public
++-- scripts
+```
+Class Diagram:<br>
+<img src="https://raw.githubusercontent.com/hendrisie/test-ui/master/docs/images/class-diagram.png">
 
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Sequence Diagram:<br>
+<img src="https://raw.githubusercontent.com/hendrisie/test-ui/master/docs/images/sequence-diagram.png">
