@@ -5,7 +5,7 @@ FROM node:alpine as builder
 WORKDIR "/test-ui"
 
 #Copying our package.json file from our local machine to the working directory inside the docker container.
-COPY package.json ./
+COPY package*.json ./
 
 #Installing the dependencies listed in our package.json file.
 RUN npm install
