@@ -4,6 +4,8 @@
 
 Given a number of currency, this application will calculate the minimum number of denominators needed to make that amount when the user hits ‘Enter’
 
+[![Build Status](https://travis-ci.com/hendrisie/test-ui.svg?branch=master)](https://travis-ci.com/hendrisie/test-ui)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 </div>
