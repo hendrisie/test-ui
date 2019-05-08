@@ -36,10 +36,15 @@ deactivate UI_ConvertForm
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Route } from "react-router-dom";
 import './index.css';
 import { LandingPage } from './pages/landing';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<LandingPage />, document.getElementById('root'));
+ReactDOM.render(
+  <Router>
+    <Route path="/" component={LandingPage} />
+  </Router>,
+  document.getElementById('root'));
 
 serviceWorker.unregister();

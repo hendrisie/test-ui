@@ -12,9 +12,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <!-- toc -->
 - [Prerequisite](#prerequisite)
-- [How to run](#howtorun)
-- [Cloud hosting](#cloudhosting)
-- [Design specifications](#design)
+- [How to Run](#howtorun)
+- [Cloud Hosting](#cloudhosting)
+- [Design Specifications](#design)
 
 <!-- tocstop -->
 
@@ -23,9 +23,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 Before running the scripts, please ensure you have done the following:<br>
 - Installed [NodeJS](https://nodejs.org/en/download/)
 - Change the working directory to the project directory (/test-ui)
-- Execute `npm install` to install all the dependencies for the project
+- Run `npm install` to install all the dependencies for the project
 
-## How to run
+## How to Run
 
 The following scripts can be run in the project directory via terminal (command line)
 
@@ -62,7 +62,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Cloud hosting
+## Cloud Hosting
 
 This app is also hosted in the cloud, the latest code in GitHub will be automatically tested and deployed to Amazon S3 by Travis CI.
 Please check the link below for the latest version deployed:<br>
@@ -70,7 +70,7 @@ http://hsie-test-ui.s3-website-ap-southeast-1.amazonaws.com/
 
 ## Design Specifications
 
-This application is using the following:
+#### Library / Framework / Tools used:
 - ReactJS library (https://reactjs.org/)
 - Redux for app state management (https://redux.js.org/)
 - Redux-Form for managing form inputs (https://redux-form.com)
@@ -81,7 +81,8 @@ This application is using the following:
 - Travis CI as CI/CD tool (https://travis-ci.com/)
 - Amazon S3 for cloud based static web hosting (https://aws.amazon.com/s3/)
 
-Folder structure:<br>
+#### Folder structure:
+
 ```
 .
 +-- src
@@ -108,10 +109,21 @@ Folder structure:<br>
 |   +-- index.jsx
 |   +-- serviceWorker.js
 +-- public
-+-- scripts
 ```
-Class Diagram:<br>
+Folder hierarchy is inspired by the `ducks` pattern (https://github.com/erikras/ducks-modular-redux)
+
+- `src/components` will contain all the common/shared UI components
+- `src/features` will group the files based which feature they belong to (including their specific presentational and container components)
+- `src/pages` will group all the pages in the application (which will contain the root Component and Store definition)
+- `src/index.jsx` is the main entry point to application, it will route to specific pages based on URL
+- `public` will contain all the static files and assets required by the app
+
+#### Class Diagram:
+
+Below are the high level class diagram of the component tree
 <img src="https://raw.githubusercontent.com/hendrisie/test-ui/master/docs/images/class-diagram.png">
 
-Sequence Diagram:<br>
+#### Sequence Diagram:
+
+Below are the high level flow of the application
 <img src="https://raw.githubusercontent.com/hendrisie/test-ui/master/docs/images/sequence-diagram.png">
