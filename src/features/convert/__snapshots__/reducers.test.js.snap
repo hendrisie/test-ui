@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`convert reducer should handle ACTION_SUBMIT with proper payload 1`] = `
+Object {
+  "denomination": Array [
+    100000,
+    50000,
+    20000,
+    10000,
+    5000,
+    1000,
+    500,
+    100,
+    50,
+  ],
+  "leftover": 0,
+  "result": Array [
+    Array [
+      1,
+      100000,
+    ],
+    Array [
+      1,
+      500,
+    ],
+  ],
+}
+`;
+
+exports[`convert reducer should not error if empty payload 1`] = `
+Object {
+  "denomination": Array [
+    100000,
+    50000,
+    20000,
+    10000,
+    5000,
+    1000,
+    500,
+    100,
+    50,
+  ],
+  "leftover": null,
+  "result": null,
+}
+`;
+
+exports[`convert reducer should not error when null payload and empty denomination 1`] = `
+Object {
+  "denomination": Array [
+    100000,
+    50000,
+    20000,
+    10000,
+    5000,
+    1000,
+    500,
+    100,
+    50,
+  ],
+  "leftover": null,
+  "result": null,
+}
+`;
+
+exports[`convert reducer should return the initial state 1`] = `
+Object {
+  "denomination": Array [
+    50,
+    50000,
+    20000,
+    100000,
+    10000,
+    5000,
+    1000,
+    500,
+    100,
+  ],
+  "leftover": null,
+  "result": null,
+}
+`;

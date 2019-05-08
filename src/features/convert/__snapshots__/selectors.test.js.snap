@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`selectors should return correct getLeftover 1`] = `1`;
+
+exports[`selectors should return correct getResult 1`] = `
+Array [
+  Array [
+    1,
+    100000,
+  ],
+  Array [
+    1,
+    500,
+  ],
+]
+`;

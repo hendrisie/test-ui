@@ -1,0 +1,46 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "jsx-quotes": ["error", "prefer-single"],
+    "react/jsx-indent": ["error", 4],
+    "react/jsx-indent-props": ["error", 4],
+    "react/require-default-props": 0,
+    "indent": ["error", 4, { "SwitchCase": 1 }],
+    "react/prefer-stateless-function": [0],
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/href-no-hash": 0,
+    "jsx-a11y/no-noninteractive-element-interactions": 0,
+    "jsx-a11y/anchor-has-content": 0,
+    "jsx-a11y/anchor-is-valid": 0,
+    "jsx-a11y/label-has-for": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    // "react/prop-types": 0,
+    "no-plusplus": 0,
+    "max-len": ["error", 150, 4, { "ignoreComments": true, "ignoreUrls": true }],
+    "prefer-destructuring": [
+      "error",
+      {
+        "VariableDeclarator": {
+          "array": false,
+          "object": true
+        },
+        "AssignmentExpression": {
+          "array": false,
+          "object": false
+        }
+      },
+      {
+        "enforceForRenamedProperties": false
+      }
+    ]
+  },
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
+  },
+  "globals": {
+  },
+  "extends": ["airbnb"]
+}

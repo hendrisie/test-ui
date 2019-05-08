@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`action creators creates action = ACTION_SUBMIT when submitTotal was successful 1`] = `
+Array [
+  Object {
+    "payload": "Rp 10501",
+    "type": "features/convert/ACTION_SUBMIT",
+  },
+]
+`;
