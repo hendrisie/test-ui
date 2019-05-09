@@ -14,7 +14,7 @@ import { ACTION_SUBMIT } from './constants';
 import { parser } from './formhelper';
 
 export const initialState = {
-  denomination: [50, 50000, 20000, 100000, 10000, 5000, 1000, 500, 100],
+  denomination: [100000, 50000, 20000, 10000, 5000, 1000, 500, 100, 50],
   result: null,
   leftover: null
 };
@@ -24,7 +24,7 @@ export const calculateChange = (totalVal, denomination) => {
   // sanitize input from action.payload
   let total = parser.currencyParser(totalVal);
   // sort through denomination descendingly
-  let denominators = denomination ? denomination.sort((a, b) => Number(a) - Number(b)).reverse() : [];
+  let denominators = denomination ? denomination : [];
   let leftover = 0;
   const result = [];
   // iterate through all possible denominators from the highest to lowest

@@ -66,15 +66,15 @@ Object {
 exports[`convert reducer should return the initial state 1`] = `
 Object {
   "denomination": Array [
-    50,
+    100000,
     50000,
     20000,
-    100000,
     10000,
     5000,
     1000,
     500,
     100,
+    50,
   ],
   "leftover": null,
   "result": null,

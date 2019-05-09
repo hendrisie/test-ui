@@ -125,5 +125,5 @@ Below is the high level class diagram of the React component tree and Redux Stor
 
 #### Sequence Diagram:
 
-Below are the high level sequence diagram for the flow of events inside the application  
+Below is the high level sequence diagram for the flow of events inside the application  
 <img src="https://raw.githubusercontent.com/hendrisie/test-ui/master/docs/images/sequence-diagram.png">
